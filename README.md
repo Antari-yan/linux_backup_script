@@ -4,6 +4,6 @@ It is tested on `Debian` based systems.
 
 ## Usage
 Adjust the following paths:
-In `backup.sh` change `backup_source` to the path of the directory that should requires backup and `backup_target` to the directory where the files should be safed to.
+In `backup.bash` change `backup_source` to the path of the directory that should requires backup and `backup_target` to the directory where the files should be safed to.
 Add in `configs/backup-exclude` all files and directories that should be excluded.
-For the Systemd service, change the path for `ExecStart` to the path where the backup script is placed in the `configs/add_to_autostart.sh` file.
+For the Systemd service, change the path for `ExecStart` to the path where the backup script is placed in the `configs/add_to_autostart.bash` file.

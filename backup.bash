@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # Copy Files to personal folder
 logfile=$( dirname -- "$0"; )/logs/_backup-log
 excludes=$( dirname -- "$0"; )/configs/backup-exclude

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 sudo bash -c 'cat << EOF > /etc/systemd/system/autostart-backup.service
 [Unit]
@@ -7,7 +7,7 @@ After=network-online.target local-fs.target share.mount
 
 [Service]
 Type=simple
-ExecStart=/bin/bash /backup_script/backup.sh
+ExecStart=/bin/bash /backup_script/backup.bash
 
 [Install]
 #WantedBy=multi-user.target
